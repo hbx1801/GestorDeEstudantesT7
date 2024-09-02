@@ -48,12 +48,14 @@ namespace GestorDeEstudantesT7
 
         private void gerenciarAlunosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormGerenciarAlunos formGerenciarAlunos = new FormGerenciarAlunos();
+            formGerenciarAlunos.Show(this);
         }
 
         private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormImprimirAlunos formImprimirAlunos = new FormImprimirAlunos();
+            formImprimirAlunos.Show();
         }
     }
 }

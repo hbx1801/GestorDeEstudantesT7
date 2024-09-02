@@ -38,7 +38,7 @@ namespace GestorDeEstudantesT7
         }
 
         bool Verificar()
-        {
+        { // método começa aqui
             if((textBoxNome.Text.Trim() == "") || 
                (textBoxSobrenome.Text.Trim() == "") ||
                (textBoxTelefone.Text.Trim() == "") ||
@@ -51,7 +51,7 @@ namespace GestorDeEstudantesT7
             {
                 return true;
             }
-        }
+        } // e termina aqui.
 
         private void buttonCadastrar_Click(object sender, EventArgs e)
         {
@@ -104,6 +104,11 @@ namespace GestorDeEstudantesT7
                 MessageBox.Show("Existem campos não preenchidos!", "Campos não preenchidos",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void FormInserirEstudante_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
